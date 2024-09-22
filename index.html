@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Personality Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer>
+
+	</script>
+</head>
+
+<body>
+
+	<header class="header">
+    <img class="bigPic" src="assets/granger.png" alt="A person writing in notebook on wooden table."> 
+		<h1>What percent Hermione Granger are you?</h1>
+    <p class="directions">Select the answer that best decribes you to each question.</p>
+	</header>
+
+	<main>
+    
+		<h2>What’s your study style?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+				<img src="assets/Q1-A1.jpg" alt="A person writing in notebook on wooden table.">
+        <br>
+        <button id="q1a1" onmouseover="changeBG1()" onmouseout="back()">I study a little bit every day.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Q1-A2.webp" alt="A person with their head on a pile of books.">
+        <br>
+        <button id="q1a2" onmouseover="changeBG2()" onmouseout="back()">I cram the night before.</button>
+      </div>
+
+    </div> 
+    
+    <h2>How do you handle challenges?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Q2-A1.jpg" alt="A man in a striped black and white shirt staring at a board covered in papers.">
+        <br>
+        <button id="q2a1" onmouseover="changeBG3()" onmouseout="back()">Research and plan thoroughly.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Q2-A2.jpg" alt="A person holding thier hands up to the camera.">
+        <br>
+        <button id="q2a2" onmouseover="changeBG4()" onmouseout="back()">Avoid them if possible.</button>
+      </div>
+
+    </div> 
+    
+    <h2>How do you feel about rules?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Q3-A1.jpg" alt="A person in a yellow jacket walking up a cement staircase.">
+        <br>
+        <button id="q3a1" onmouseover="changeBG5()" onmouseout="back()">They’re there for a reason!</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Q3-A2.jpeg" alt="A black silhouette of a girl wearing devil ears with a purple background. ">
+        <br>
+        <button id="q3a2" onmouseover="changeBG6()" onmouseout="back()">Rules? What rules?</button>
+      </div>
+
+    </div> 
+
+    <h2>What’s your idea of a perfect Saturday?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Q4-A1.jpg" alt="A person holding a book and a cup of tea.">
+        <br>
+        <button id="q4a1" onmouseover="changeBG7()" onmouseout="back()">Reading a book and sipping tea.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Q4-A2.jpg" alt="A dark haired girl sleeping in a bed with white sheets.">
+        <br>
+        <button id="q4a2" onmouseover="changeBG8()" onmouseout="back()">Sleeping in and doing nothing.</button>
+      </div>
+
+    </div> 
+
+  <div class="output">
+    <h2 id="result">Your result is...</h2>
+  </div>
+    
+  <button id="restart">Take quiz again!</button>
+
+    
+  </main>
+  </body>
+</html>
